@@ -42,14 +42,14 @@
   "priority": 1,
   "output": "/path/to/output.log"
 }```
-2. Build the Job Queue
-3. Implement the Scheduler
-4. Develop Worker Node Logic
-5. Set up Communication
-6. Add Monitoring and Logging
+1. Build the Job Queue
+2. Implement the Scheduler
+3. Develop Worker Node Logic
+4. Set up Communication
+5. Add Monitoring and Logging
 	1. Track job status
 	2. Log events for debugging and auditing
-7. Create User interface
+6. Create User interface
 
 ## Useful C libraries
 

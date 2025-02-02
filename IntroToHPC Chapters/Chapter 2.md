@@ -1,0 +1,39 @@
+- Supercomputers are the most powerful computers, and for the past two decades, they have all been parallel computers, meaning they use multiple CPUs to solve problems faster
+	- Instruction-Level Parallelism: Parallel execution within a single CPU, managed by the compiler and hardware
+	- Explicit Parallelism: Multiple processors working on separate instruction streams, controlled by the programmer
+	- Basically, the goal is to speed up computations by distributing tasks across multiple processors
+- Scientific Computing is one of the common applications of Parallel Computing since it involves large amounts of repetitive computations
+- Data Parallelism: The same operation is applied to multiple data elements simultaneously
+- Functional Parallelism: Different tasks (functions) are executed in parallel.
+- Speedup: $S_p=\frac{T_1}{T_p}$, where $T_1$ is the execution time on one processor and $T_p$ the time on $p$ processors
+- Efficiency: $E_{p}=\frac{S_p}{p}$ which measures how well processors are utilized
+- Amdahl's Law: If a fraction $F_s$ of a program is inherently sequential, then the maximum speedup is: $\frac{1}{F_S}$
+	- Even with infinite processors, parallel execution is limited by the sequential portion
+- Gustafson's Law: Unlike Amdahl’s Law, Gustafson’s Law assumes problem size grows with the number of processors, meaning speedup is much more favorable.
+- Brents Theorem: Theoretical limit of parallel execution is determined by the longest chain of dependent operations (critical path)
+- Cost-Optimal: A parallel program where the overhead is at most of the order of the running time of the sequential algorithm
+- Flynn's Taxonomy:  characterizes architectures by whether the data flow and control flow are shared or independent
+	- Single Instruction Single Data (SISD): Traditional CPU architecture. At any one time only a single instruction is executed, operating on a single data item
+	- Single Instruction Multiple Data (SIMD): in this computer type there can be multiple processors, each operating on its own data item, but they are all executing the same instruction on that data item. An example of this are Vector Processors or GPUs
+	- Multiple Instruction Single Data (MISD): No architectures answering to this description exist
+	- Multiple Instruction Multiple Data (MIMD): here multiple CPUs operate on multiple data items, each executing independent instructions. Most parallel computers fall into this category
+- Uniform Memory Access (UMA): a shared memory architecture where all processors have equal access to memory
+- Non Uniform Memory Access (NUMA): A computer memory design where the memory access time depends on the memory location relative to the processor
+- Data Level Parallelism (i.e. distributed systems): is a program executing on multiple machines (nodes) in parallel, where each machine uses its own processor to compute bits of output later combined from all nodes into the output of the program.
+- Instruction Level Parallelism (ILP): a system where a microprocessor can execute (retire) more than one instruction in parallel.
+- Thread Level Parallelism (TLP): is when a single program is decomposed in multiple parallel bits of code (threads). These threads can be executed in parallel, with the possibility of better efficiency if the threads nicely scale to the number of processors, typically on the same machine.
+- Shared Memory: All processors share a common address space
+- Distributed Memory: Each processor has its own memory; data exchange happens via message passing (e.g., MPI)
+- Process: The execution of a single program. This it has in memory:
+	- The program code, in the form of machine language instructions
+	- A heap, containing for instance arrays that were created with malloc
+	- A stack with quick-changing information, such as the program counter that indicates what instruction is currently being executed, and data items with local scope, as well as intermediate results from computations.
+- Strong Scaling: Fixed problem size, more processors → should reduce execution time proportionally.
+- Weak Scaling: Increase problem size with the number of processors → maintains constant execution time.
+- A scalable algorithm should maintain high efficiency as problem size and processor count grow.
+- Real systems experience Communication Overhead, limiting ideal scaling
+	- Communication Overhead refers to: the time and resources spent transferring data between parallel components like processors, cores, or nodes. Basically, messages passing between processors adds latency
+- Combination of shared memory (OpenMP) and distributed memory (MPI) is best for performance
+- Load imbalance: Uneven work distribution reduces efficiency. Dynamic scheduling and work stealing help this
+	- Dynamic Scheduling: technique in which the hardware rearranges the instruction execution to reduce the stalls, while maintaining data flow and exception behavior
+	- Work Stealing: Allows underutilized processors to take tasks from overloaded/busy processors, which ensures a more balanced workload distribution

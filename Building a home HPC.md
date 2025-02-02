@@ -47,7 +47,7 @@ Software needed:
 - Firewall
 	- Firewalld
 - NTP
-	- configuri Network Time Protocol (NTP) on a cluster of servers
+	- configure Network Time Protocol (NTP) on a cluster of servers
 
 The basic steps:
 1. Install OS on each machine
