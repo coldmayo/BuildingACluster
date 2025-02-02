@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "df22631a30d6ebeb",
+    "type": "split",
+    "children": [
+      {
+        "id": "c69facf81a6f1fe7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62dce9c343e9f794",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HPC Carpentry.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "HPC Carpentry"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d2ac688ed1b26442",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4e6af50601ef29f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a5a8373395b6e5e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fda2ac784781d016",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5a00702027027f97",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f6315a92aa239eff",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2d0007b553c982c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2fe6554820931617",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HPC Carpentry.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for HPC Carpentry"
+            }
+          },
+          {
+            "id": "e459e0f26180a664",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HPC Carpentry.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from HPC Carpentry"
+            }
+          },
+          {
+            "id": "24c68cf4049df14e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c9171155c6614d65",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HPC Carpentry.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of HPC Carpentry"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "62dce9c343e9f794",
+  "lastOpenFiles": [
+    "Building a Scheduler.md",
+    "Building a home HPC.md",
+    "README.md",
+    "IntroToHPC Chapters/Chapter 6.md",
+    "IntroToHPC Chapters/Chapter 2.md",
+    "HPC Carpentry.md",
+    "Intro To HPC Chapters.md",
+    "Products.md"
+  ]
+}
