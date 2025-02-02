@@ -1,6 +1,6 @@
 This is a Repo on notes taken to build a Beowulf cluster (and make BPS pay the electricity bill)
 
-Take a look at [[Intro To HPC Chapters]] to see some notes from the relevant chapters from the Intro to HPC textbook
+Take a look at [[Intro To HPC Chapters]] and [[HPC Carpentry]] to see some notes from the relevant chapters from the Intro to HPC textbook
 
 The [[Building a home HPC]] file shows what we need/how everything fits together
 
